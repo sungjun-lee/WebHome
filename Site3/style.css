@@ -1,0 +1,173 @@
+@font-face { font-family: 'MaplestoryOTFBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BinggraeMelona-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+
+
+html, body {
+    background-color: #eff0fa;
+    margin: 0;
+    font-family: Roboto, "Roboto", NotoSans, "Noto Sans", "\B9D1\C740 \ACE0\B515", "Malgun Gothic", sans-serif;
+    box-sizing: border-box;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+}
+.start_display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title_1{
+    color: black;
+    font-size: 1.5em;
+    margin-top: 0em;
+    margin-bottom: 0.5em;
+    font-family: 'Binggrae-Bold';
+}
+
+.title_2{
+    color: black;
+    font-size: 1.4em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: "Binggrae-Bold";
+    color : #2E2E2E;
+}
+
+.title_3{
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+    font-family: "CookieRunOTF-Bold";
+    color : #2E2E2E;
+}
+
+.start_btn{
+    margin-top : 2em;
+    margin-bottom: 0.5em;
+    color: white;
+    background-color: red;
+    border-radius: 1em;
+    text-align: center;
+    width: 7em;
+    font-size: 1.5em;
+    font-family: 'BinggraeMelona-Bold';
+}
+
+.restart_btn{
+    margin-bottom: 0.5em;
+    color: white;
+    background-color: red;
+    border-radius: 1em;
+    text-align: center;
+    width: 7em;
+    font-size: 1.5em;
+    font-family: 'BinggraeMelona-Bold';
+}
+
+.question_display{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10em;
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 7px;
+    width: 25em;
+    height: 0.7em;
+    margin-top: 0.7px;
+    box-shadow: inset 2px 2px 5px #d9d9d9,
+    inset -2px -2px 5px #ffffff;
+    margin-bottom: 1.5em;
+}
+
+.chart-inner {
+    width: 10%;
+    height: inherit;
+    border-radius: 5px;
+    background-color: mediumblue;
+    transition: width 0.2s ease-out 0s;
+    box-shadow: inset 2px 2px 5px  mediumblue,
+    inset -2px -2px 5px  mediumblue;
+}
+.order_question1{
+  font-size: 2em;
+  color: mediumblue;   
+}
+  .order_question2{
+    font-size: 2em;
+    color: slategray;   
+}
+
+.question_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25em;
+}
+
+.question
+{
+    width: 100%;
+    padding-bottom: 0em;
+    font-size: 2em;
+}
+
+.answer{
+    width: 100%;
+    font-size: 3em;
+    text-align: center;
+}
+
+
+.answer1:hover,
+.answer2:hover {
+    cursor: pointer;
+    color: red;
+    border-radius: 8px;
+}
+
+.btn1
+,.btn2
+,.btn3
+,.btn4
+,.btn5{
+  cursor: pointer;
+}
+
+
+.page_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+  width: 55%;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 2em;
+  background-color: black;
+  color: white;
+}

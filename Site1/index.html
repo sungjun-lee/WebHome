@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f73310b4b3cd39f"></script>
+    <script src = "src/main.js" defer></script>
+    <link href="style.css" rel ="stylesheet">
+    <meta name="naver-site-verification" content="e0c7fcefc7f1e0da2ee08079f578ea3364c342cd" />
+    <title>동물상 테스트</title>
+    <meta name="title" content ="동물상 테스트">
+    <meta name="subject" content="얼굴로 보는 동물상 테스트, 닮은 동물상을 찾아보세요!">
+    <meta name="description" content="나와 닮은 동물상을 찾아보세요!나의 얼굴로 동물상과 특징을 찾아드립니다."/>
+    <meta name="keywords" content="동물상 테스트, 인공지능 동물상 테스트, 얼굴상, 얼굴상 테스트, 나와 닮은 동물, 동물상 찾기, 얼굴로 보는 동물상, 얼굴 동물, 동물얼굴, 강아지상, 고양이상, 여우상, 사슴상, 토끼상, 곰상, 인공지능 동물상, AI 얼굴상, AI 동물상">
+    <link rel="canonical" href="https://findanimals.netlify.app" />
+    <meta property="og:title" content="동물상 테스트" />
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="얼굴로 확인하는 동물상 테스트" />
+</head>
+<body>
+  <!--Page Menu-->
+  <div class= page_top>
+    <div class = "top_menu">
+      <div class ="btn1">FunyPlay</div>
+      <div class ="btn2">Intro</div>
+      <div class ="btn3">GameList</div>
+      <div class ="btn4">FreeBorad</div>
+      <div class ="btn5">Q&A</div>
+    </div>
+  </div>
+  <div class="page-wrap">
+    <!--Content-->
+    <div class = "left_ad">
+      <ins class="kakao_ad_area" style="display:none;" 
+      data-ad-unit    = "DAN-1hrlzcuafvu45" 
+      data-ad-width   = "160" 
+      data-ad-height  = "600"></ins> 
+    </div>
+    <div class ="page-content">
+    <header><h1 class ="title_text">당신의 동물상은 ???!</h1></header>
+     <div class="title_text2">(🐶🐱🐰 🦌🐺 🐻🐯)</div> 
+     <div class="title_text3">당신의 성별을 선택해주세요</div>
+     <div class="btn_select">
+         <div class="btn-group" data-toggle="buttons">
+           <label class="btn active">
+             <input type="radio" name='gender2' id="gender1" checked><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Male</span>
+           </label>
+           <label class="btn">
+             <input type="radio" name='gender2' id="gender2"><i class="fa fa-circle-o fa-2x"></i><i class="fa fa-check-circle-o fa-2x"></i><span> Female</span>
+           </label>
+        </div>
+     </div>
+   <!--file upload-->
+    <div class="file-upload">
+      <div class="image-upload-wrap">
+        <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+        <div class="drag-text">
+          <div class ="file_text">사진을 올려놓거나 업로드해주세요!!
+          </div>
+        </div>
+      </div>
+      <div class="file-upload-content">
+        <img class="file-upload-image" id="face-image" src="#" alt="your image" />
+          <div class="image-title-wrap"> <button type="button" onclick="removeUpload()" class="remove-image">다른사진으로 다시하기</button></div>
+        <div class ="image_text"></div>
+        <div id='label-container'></div>
+        <!-- CHART 표현하기 -->
+        <div class = "chart"></div>
+      </div>
+    </div> 
+    <!-- 공유하기 --> 
+    <!-- Go to www.addthis.com/dashboard to customize your tools -->
+    <div class="addthis_inline_share_toolbox"></div>
+      <!--하단 배너-->
+    <div class = "bottom_ad">
+      <ins class="kakao_ad_area" style="display:none;" 
+      data-ad-unit    = "DAN-1jetad4kg86d4" 
+      data-ad-width   = "320" 
+      data-ad-height  = "100"></ins> 
+      <script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script> 
+    </div>
+  </div>
+  <div class = "right_ad"> 
+    <ins class="kakao_ad_area" style="display:none;" 
+ data-ad-unit    = "DAN-1hre6f23q8ig5" 
+ data-ad-width   = "160" 
+ data-ad-height  = "600"></ins> 
+<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
+  </div>
+</div>
+
+</body>
+<!--
+  opyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+</html>

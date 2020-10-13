@@ -1,0 +1,430 @@
+@font-face { font-family: 'MaplestoryOTFBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BinggraeMelona-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color:white;
+}
+
+h1,
+h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.page_top{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.top_menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+  width: 55%;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 2em;
+  background-color: black;
+  color: white;
+}
+
+.page-wrap{
+  display:  flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left_ad{
+  width: 160px;
+  height: 600px;
+  padding-right: 0em;
+  position: relative;
+}
+
+.right_ad{
+  width: 160px;
+  height: 600px;
+  padding-left: 0em;
+}
+
+.bottom_ad{
+  padding-top: 2em;
+  width:  630px;
+  height: 100px;
+  
+}
+
+.addthis_inline_share_toolbox{
+  padding-top: 2em;
+}
+
+.page-content {
+  font-family: sans-serif;
+  width: 50%;
+  display:  flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+  -webkit-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+
+}
+
+.title_text{
+  height: 40px;
+  padding-bottom : 0;
+  margin-bottom: 0;
+  font-size: 35px;
+  font-family: "Binggrae-Bold";
+  color : #2E2E2E;
+}
+
+.title_text2{
+  height: 30px;
+  padding-top : 1em;
+  margin-top : 0;
+  padding-bottom: 1em;
+  font-size: 15px;
+  font-family: "Binggrae-Bold";
+}
+.title_text3{
+  height: 30px;
+  padding-top : 0;
+  margin-top : 0;
+  padding-bottom: 0;
+  font-size: 18px;
+  font-family: "Binggrae-Bold";
+}
+
+
+.file-upload {
+  background-color: #ffffff;
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #1FB264;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #15824B;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #1AA059;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+  margin-top: 20px;
+  border: 4px dashed coral;
+  position: relative;
+}
+
+.label-container > div{
+ background-color: pink;
+}
+
+ .drag-text >.file_text{
+  width: 100%;
+  height: 100%;
+}
+.image-dropping,
+.file_text:hover,
+.image-upload-wrap:hover {
+  background-color: coral;
+  border: 4px dashed #ffffff;
+  color : white;
+}
+
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+  height: 150px;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #15824B;
+  padding: 60px 0;
+}
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.title-0{
+ color: pink;
+}
+
+.title-1{
+  color:powderblue;
+ }
+
+
+ .bar-chart {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  height: 1rem;
+  margin-bottom: 1.5rem;
+}
+.bar-chart .bar-chart--inner {
+  background: #333;
+  height: 100%;
+  display: block;
+  margin-bottom: 0rem;
+  position: relative;
+  will-change: width;
+}
+.bar-chart .bar-chart--inner:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+.bar-chart[animated] .bar-chart--inner {
+  -webkit-transition: width 1.3s;
+  transition: width 1.3s;
+}
+.bar-chart.chart0 .bar-chart--inner {
+  background: #e86951;
+  font-size : 13px;
+  color:  white;
+}
+.bar-chart.chart1 .bar-chart--inner {
+  background: #168de6;
+  font-size : 13px;
+  color:  white;
+}
+.bar-chart.chart2 .bar-chart--inner {
+  background: #1dbdab;
+  font-size : 13px;
+  color:  white;
+}
+.bar-chart.chart3 .bar-chart--inner {
+  background: darkgoldenrod;
+  font-size : 13px;
+  color:  white;
+}
+.bar-chart.chart4 .bar-chart--inner {
+  background: hotpink;
+  font-size : 13px;
+  color:  white;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.bar-chart--text{
+  font-size : 13px;
+  width: 5em;
+  font-family: "MaplestoryOTFBold";
+}
+.chart {
+  box-sizing: border-box;
+  color: black;
+  background:white;
+  padding: 16px;
+  width: 100%;
+}
+
+
+label.btn span {
+  font-size: 1.5em ;
+}
+
+label input[type="radio"] ~ i.fa.fa-circle-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+    display: none;
+}
+label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="radio"] ~ i.fa {
+color: #7AA3CC;
+}
+
+label input[type="checkbox"] ~ i.fa.fa-square-o{
+    color: #c8c8c8;    display: inline;
+}
+label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+    display: none;
+}
+label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+    color: #7AA3CC;    display: inline;
+}
+label:hover input[type="checkbox"] ~ i.fa {
+color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label.active{
+    color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 2em;
+text-align: left;
+white-space: nowrap;
+vertical-align: top;
+cursor: pointer;
+background-color: none;
+border: 0px solid 
+#c8c8c8;
+border-radius: 3px;
+color: #c8c8c8;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+
+div[data-toggle="buttons"] label:hover {
+color: #7AA3CC;
+}
+
+div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+-webkit-box-shadow: none;
+box-shadow: none;
+}
+
+.img_desc1{
+  font-style: initial;
+  font-size: 1.5em;
+  font-family: 'CookieRunOTF-Bold';
+  color :  dodgerblue;
+}
+
+.img_desc2{
+  font: lighter;
+  font-family: 'Jeju Hallasan', serif;
+  font-family: 'MaplestoryOTFBold';
+  color : darkslategray;
+}
+
+ .btn1
+,.btn2
+,.btn3
+,.btn4
+,.btn5{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+  }
+  
+   .left_ad
+   , .right_ad{
+     display: none;
+   }
+}
