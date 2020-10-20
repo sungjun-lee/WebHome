@@ -55,6 +55,9 @@ function login_check(e) {
   }
 }
 
+//세션 체크 함수
+userSessionCheck();
+
 //유저가 로그인 했는지 안했는지 확인해주는 함수
 function userSessionCheck() {
 
@@ -66,6 +69,9 @@ function userSessionCheck() {
       firebaseDatabase.ref("users/" + user.uid).once('value').then(function (snapshot) {
         //자바스크립트 dom 선택자를 통해서 네비게이션 메뉴의 엘리먼트 변경해주기
         document.getElementById("login").textContent = "로그아웃";
+        document.getElementById("visit").textContent = "회원가입";
+        document.getElementById("find").textContent = "ID/PW찾기";
+        
         document.getElementById("joinuser").textContent = "반가워요! " + snapshot.val().name + "님";
         //document.getElementById("joinmenu").href = "#";
         name = snapshot.val().name;   //유저 닉네임은 계속 쓸거기 때문에 전역변수로 할당
@@ -76,9 +82,9 @@ function userSessionCheck() {
       });
     }else{
       document.getElementById("login").textContent = "로그인";
+      document.getElementById("visit").textContent = "회원가입";
+      document.getElementById("find").textContent = "ID/PW찾기";
     }
   });
 }
-
-
 
