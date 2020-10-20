@@ -1,0 +1,123 @@
+@font-face { font-family: 'MaplestoryOTFBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'CookieRunOTF-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/CookieRunOTF-Bold00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BMEULJIRO'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'yg-jalnan'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'BinggraeMelona-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BinggraeMelona-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Binggrae-Bold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Binggrae-Bold.woff') format('woff'); font-weight: normal; font-style: normal; }
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color:white;
+}
+
+h1,
+h6 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.top_log{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  height: 1em;
+  width: 55%;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 0em;
+  background-color: black;
+  color: white;
+}
+
+.top_menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 4em;
+  width: 55%;
+  padding-left: 150px;
+  padding-right: 150px;
+  margin-bottom: 2em;
+  background-color: black;
+  color: white;
+}
+
+.page_top{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login
+,.visit
+,.find
+,.joinuser{
+  margin-top : 0.2em;
+  margin-right : 0.9em;
+  background-color: black;
+  color: white;
+  font-size: 0.7em;
+  cursor: pointer;
+}
+
+
+.page-wrap{
+  display:  flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+ .btn1
+,.btn2
+,.btn3
+,.btn4
+,.btn5{
+  cursor: pointer;
+}
+
+table {
+  border-top: 1px solid #444444;
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 1px solid #444444;
+  padding: 10px;
+}
+
+td {
+  border-bottom: 1px solid #efefef;
+  padding: 10px;
+}
+
+table .even {
+  background: #efefef;
+}
+
+.text {
+  text-align: center;
+  padding-top: 20px;
+  color: #000000
+}
+
+.text:hover {
+  text-decoration: underline;
+}
+
+a:link {
+  color: #57A0EE;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
